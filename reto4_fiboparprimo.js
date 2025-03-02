@@ -6,3 +6,34 @@
  */
 
 const readline = require("readline-sync");
+
+function esPrimo(num) {
+    if (num < 2) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+function esFibonacci(num) {
+    let a = 0, b = 1, temp;
+    while (b < num) {
+        temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return num === b || num === 0;
+}
+
+function esPar(num) {
+    return num % 2 === 0;
+}
+
+const numero = parseInt(readline.question("Introduce un numero: "), 10);
+let resultado = `${numero} `;
+
+resultado += esPrimo(numero) ? "es primo, " : "no es primo, ";
+resultado += esFibonacci(numero) ? "es fibonacci, " : "no es fibonacci, ";
+resultado += esPar(numero) ? "y es par" : "y es impar";
+
+console.log(resultado);
