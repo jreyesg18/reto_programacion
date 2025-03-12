@@ -19,5 +19,7 @@ Este repositorio contiene soluciones a una serie de retos de programación en Ja
 | 7  | EL SOMBRERO SELECCIONADOR                           |
 | 8  | EL GENERADOR PSEUDOALEATORIO                        |
 | 9  | HETEROGRAMA, ISOGRAMA Y PANGRAMA                    |
-| 10 | LA API                                             |
-| 11 | URL PARAMS                                          |
+| 10 | LA API                                              |
+| 11 | VIERNES13                                           |
+| 12 | DECIMALOCTAL                                        |
+| -- | METRO                                               |
